@@ -10,10 +10,6 @@ public class BarraVida : MonoBehaviour
     public float damageTime;
     float currentDamageTime;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     private void OnTriggerStay(Collider other)
     {
