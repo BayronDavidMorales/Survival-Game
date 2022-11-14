@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8209497517400845957}
   - component: {fileID: 597377417359164220}
   - component: {fileID: 8315289642378810406}
+  - component: {fileID: 5319817599776366121}
   m_Layer: 0
   m_Name: Ground.004
   m_TagString: Untagged
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d34380930a183d428c3d80c7b41d708, type: 2}
+  - {fileID: 2100000, guid: 8142a49cafce79042a93cc1ac8d3c4dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,5 +96,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.05093428, y: 0.07795937, z: 0.07911412}
-  m_Center: {x: 0.0005284939, y: -0.005189101, z: 0.03955706}
+  m_Size: {x: 0.05093428, y: 0.054512493, z: 0.07911412}
+  m_Center: {x: 0.0005284929, y: -0.016912552, z: 0.039557062}
+--- !u!65 &5319817599776366121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496609834005457110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05093428, y: 0.07551631, z: 0.04972713}
+  m_Center: {x: 0.0005284929, y: -0.0064106463, z: 0.024863582}
