@@ -6,7 +6,6 @@ using UnityEngine;
 public class PushItem : MonoBehaviour
 {
     public GameObject player;
-    public bool isKinematic;
     // Start is called before the first frame update
     void Start()
     {

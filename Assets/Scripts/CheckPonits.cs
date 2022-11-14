@@ -7,7 +7,7 @@ public class CheckPonits : MonoBehaviour
     public bool activePush = false;
     public BasicRigidBodyPush pushBody;
 
-    public LayerMask pushLayer;
+    private bool flag = true;
 
     // Start is called before the first frame update
     void Start()
@@ -17,15 +17,15 @@ public class CheckPonits : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Push")
+        if(other.tag == "Push" && flag)
         {
-            //pushBody.canPush = activePush;
-            other.GetComponent<Rigidbody>().isKinematic = !activePush;
+            pushBody.canPush = false;
+            other.GetComponent<Rigidbody>().isKinematic = true;
+            flag = false;
         }
-        if(other.tag == "Player")
+        if(activePush && other.tag == "Player")
         {
-            Debug.Log("Entro");
-            pushBody.canPush = activePush;
+            pushBody.canPush = true;
         }
     }
 }
