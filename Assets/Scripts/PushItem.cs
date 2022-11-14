@@ -23,4 +23,16 @@ public class PushItem : MonoBehaviour
             gameObject.GetComponent<Rigidbody>().isKinematic = player.GetComponent<Animator>().GetBool("FreeFall") ? true : false;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player" && player.GetComponent<BasicRigidBodyPush>().canPush)
+        {
+            gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        }
+        else
+        {
+            //gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        }
+    }
 }

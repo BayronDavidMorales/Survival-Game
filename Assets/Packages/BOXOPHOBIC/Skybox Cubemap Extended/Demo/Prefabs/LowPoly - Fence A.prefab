@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 4622981333497442}
   - component: {fileID: 33764989204799150}
   - component: {fileID: 23903698892329218}
-  - component: {fileID: 3204843063767410504}
+  - component: {fileID: 4212838455839963916}
   m_Layer: 0
   m_Name: LowPoly - Fence A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 95
   m_IsActive: 1
 --- !u!4 &4622981333497442
 Transform:
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1051545866392792}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.2066083, y: 2.2066076, z: 2.206608}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff059fc016fcf8d4a88162b27e334cba, type: 2}
+  - {fileID: 2100000, guid: 8142a49cafce79042a93cc1ac8d3c4dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3204843063767410504
+--- !u!65 &4212838455839963916
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.959415, y: 0.5636784, z: 1.6312308}
-  m_Center: {x: 0, y: -0.03170853, z: 0.85072815}
+  m_Size: {x: 4.9594173, y: 0.56367874, z: 1.6312311}
+  m_Center: {x: -0.0000000467747, y: -0.031716295, z: 0.8507281}
