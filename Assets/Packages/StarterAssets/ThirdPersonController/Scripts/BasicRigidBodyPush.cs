@@ -69,7 +69,10 @@ public class BasicRigidBodyPush : MonoBehaviour
         animator.SetBool("Push", true);
         thirdPersonController.MoveSpeed = 1.0f;
         thirdPersonController.SprintSpeed = 1.0f;
-        drag.Play();
+        if (drag.isPlaying == false)
+        {
+            drag.Play();
+        }
     }
 
     private void StopPush(Collision collision)

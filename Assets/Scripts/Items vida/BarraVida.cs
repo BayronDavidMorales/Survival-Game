@@ -12,9 +12,12 @@ public class BarraVida : MonoBehaviour
 
     public bool isEnemy = false;
     public bool isApple = false;
+
+    public AudioManager audioManager;
+
     public void Start()
     {
-
+        audioManager = FindObjectOfType<AudioManager>();
     }
     private void OnTriggerStay(Collider other)
     {
@@ -29,6 +32,13 @@ public class BarraVida : MonoBehaviour
                 }
                 if (cantidad < 0) { 
                     other.gameObject.GetComponent<Animator>().SetBool("Hurt", true);
+                    if(audioManager.audioSource.isPlaying == false){
+                        audioManager.PlayClip(0, 0.5f);
+                    }
+                }
+                else
+                {
+                    audioManager.PlayClip(1, 1);
                 }
                 playerManager.vida += cantidad;
                 currentDamageTime = 0.0f;

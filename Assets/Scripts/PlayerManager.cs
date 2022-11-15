@@ -28,9 +28,6 @@ public class PlayerManager : MonoBehaviour
     {
         vida = Mathf.Clamp(vida, 0, 100);
         barraDeVida.fillAmount = vida / 100;
-
-
-
     }
 
     private void OnTriggerEnter(Collider other)
