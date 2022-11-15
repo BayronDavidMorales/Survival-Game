@@ -1789,7 +1789,7 @@ Transform:
   m_GameObject: {fileID: 6504692406715830272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.16, y: 0, z: -7.68}
-  m_LocalScale: {x: 0.6432313, y: 0.64323145, z: 0.6432313}
+  m_LocalScale: {x: 0.6432315, y: 0.64323145, z: 0.6432315}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7072823328555534007}
@@ -1843,10 +1843,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 1.6
+  m_Radius: 0.27601895
+  m_Height: 1.484625
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Center: {x: 2.9066616e-10, y: 0.79546136, z: -0.023981063}
 --- !u!195 &6049955215872199860
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1913,8 +1913,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5162367, y: 1.1131086, z: 0.634434}
-  m_Center: {x: 0, y: 0.72362995, z: 0}
+  m_Size: {x: 0.27024853, y: 0.8412297, z: 0.4978099}
+  m_Center: {x: -0.005108276, y: 0.7979247, z: -0.001259205}
 --- !u!114 &5704197275783644995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1928,8 +1928,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerManager: {fileID: 0}
-  cantidad: -10
+  cantidad: -2
   damageTime: 0.25
+  isEnemy: 1
+  enemy: {fileID: 0}
 --- !u!1 &6579217443973605110
 GameObject:
   m_ObjectHideFlags: 0
