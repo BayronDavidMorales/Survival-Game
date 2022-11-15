@@ -38,12 +38,13 @@ public class BarraVida : MonoBehaviour
                 if (isEnemy)
                 {
                     gameObject.GetComponent<Animator>().SetBool("Attack", true);
+                        audioManager.PlayClip(2, 0.2f);
                 }
                 if (cantidad < 0) { 
                     other.gameObject.GetComponent<Animator>().SetBool("Hurt", true);
-                    if(audioManager.audioSource.isPlaying == false){
+                    //if(audioManager.audioSource.isPlaying == false){
                         audioManager.PlayClip(0, 0.5f);
-                    }
+                    //}
                 }
                 else
                 {
