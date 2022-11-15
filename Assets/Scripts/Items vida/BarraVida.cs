@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BarraVida : MonoBehaviour
 {
@@ -18,6 +19,14 @@ public class BarraVida : MonoBehaviour
     public void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (playerManager.vida < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
     private void OnTriggerStay(Collider other)
     {
