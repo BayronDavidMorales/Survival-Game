@@ -11,7 +11,7 @@ public class BarraVida : MonoBehaviour
     float currentDamageTime;
 
     public bool isEnemy = false;
-    public GameObject enemy;
+    public bool isApple = false;
     public void Start()
     {
 
@@ -27,9 +27,16 @@ public class BarraVida : MonoBehaviour
                 {
                     gameObject.GetComponent<Animator>().SetBool("Attack", true);
                 }
-                other.gameObject.GetComponent<Animator>().SetBool("Hurt", true);
+                if (cantidad < 0) { 
+                    other.gameObject.GetComponent<Animator>().SetBool("Hurt", true);
+                }
                 playerManager.vida += cantidad;
                 currentDamageTime = 0.0f;
+
+                if (isApple)
+                {
+                    Destroy(gameObject);
+                }
             }
         }
     }
