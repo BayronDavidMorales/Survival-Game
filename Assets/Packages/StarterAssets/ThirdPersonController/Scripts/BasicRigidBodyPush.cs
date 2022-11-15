@@ -24,14 +24,14 @@ public class BasicRigidBodyPush : MonoBehaviour
 	}
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.layer == pushLayers && canPush)
+        if(collision.gameObject.tag == "Push" && canPush)
         {
             PlayPush(collision);
         }
     }
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.layer == pushLayers && canPush)
+        if (collision.gameObject.tag == "Push" &&  canPush)
         {
             PlayPush(collision);
         }

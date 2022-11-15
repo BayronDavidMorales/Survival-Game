@@ -29,9 +29,9 @@ public class PushItem : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody>().isKinematic = false;
         }
-        else
+        if (collision.gameObject.tag != "Player")
         {
-            //gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }
